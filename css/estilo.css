@@ -2,16 +2,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .titulo{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .menu {
     display: flex;
     flex-direction: column;
-    gap: 50px
+    gap: 40px
 }

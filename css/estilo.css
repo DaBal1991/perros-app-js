@@ -17,3 +17,16 @@
     flex-direction: column;
     gap: 40px
 }
+
+#contenedor-resultados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#contenedor-resultados img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}

@@ -4,8 +4,11 @@ const estado = {
 };
 
 const IMAGENES_HARDCODEADAS = [
-    /* No funciona la API */
-]
+    /* API funcionando de nuevo: 09/07/2026 */
+    `https://images.dog.ceo/breeds/akita/512px-Ainu-Dog.jpg`,
+    `https://images.dog.ceo/breeds/akita/Japaneseakita.jpg`,
+    `https://images.dog.ceo/breeds/akita/512px-Akita_inu.jpg`,
+];
 
 const inputRaza = document.querySelector(`#inputRaza`);
 const btnBuscar = document.querySelector(`#btnBuscar`);
@@ -14,7 +17,6 @@ const contenedorResultados = document.querySelector(`#contenedor-resultados`);
 // QuerySelector busca el primer elemento que coincida con el selector CSS que recibe.
 // # -> Id.
 // . -> Clase.
-// Sin prefijo simbolico -> Busca sin distinguir entre clase e id.
 
 // Funciones
 const limpiar = () => {
@@ -25,7 +27,7 @@ const render = () => {
     limpiar();
 
     const imagenes = estado.fotos.map((url) => {
-        const imagen = document.createElement(`imagenPerro`);
+        const imagen = document.createElement(`img`); // crear un elemento <img>
         imagen.src = url;
         return imagen;
     })
